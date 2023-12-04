@@ -2,4 +2,7 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="comment">#EBF5ED</color>
+    <color name="other">#E8EDF2</color>
+    <color name="report">#F6EBEB</color>
 </resources>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:gravity="center">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:background="@drawable/background_dialog">
+        <TextView
+            android:id="@+id/full_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/manrope_bold"
+            android:textSize="14sp"
+            android:text="Nguyen Tuan Anh"
+            android:textColor="@color/black"
+            android:gravity="center"
+            />
+        <TextView
+            android:id="@+id/data"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/manrope"
+            android:textSize="14sp"
+            android:layout_marginTop="10dp"
+            android:text="\- App M7: \n+ Fix load access token \n+ Fix user agent \n+ Setup Push notification \n+ Setup analytics \n+ \n\- App Internal \n+ Update component(HOC) \n+ Handle UI Manage users(List, detail, edit, remove) \n+ Handle data Manage users(List, detail, edit, remove) \n+"
+            android:lineHeight="30dp"
+            />
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:fontFamily="@font/manrope_bold"
+            android:textSize="14sp"
+            android:text="OK"
+            android:layout_marginTop="40dp"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:layout_gravity="end"
+            android:background="@drawable/background_btn"/>
+    </LinearLayout>
+
+</LinearLayout>

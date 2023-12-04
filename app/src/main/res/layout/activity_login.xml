@@ -4,12 +4,111 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
-    tools:context=".LoginActivity">
+    android:orientation="vertical"
+    tools:context=".LoginActivity"
+    android:gravity="center|top"
+    android:paddingTop="158dp"
+    android:background="@drawable/background_login">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/manrope_bold"
+        android:text="@string/login"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/manrope"
+            android:textSize="18sp"
+            android:gravity="center_horizontal"
+            android:text="By signing in you are agreeing"
+            android:textColor="#6B5E5E"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/manrope"
+            android:textSize="18sp"
+            android:gravity="center_horizontal"
+            android:text="our Term and privacy policy"
+            android:textColor="#036BB9"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_border_login"
+        android:padding="1dp"
+        android:elevation="5dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="30dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:hintEnabled="false">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/custom_border_login"
+                android:hint="Email"
+                android:textColor="@color/black"
+                android:fontFamily="@font/manrope"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/custom_border_login"
+        android:padding="1dp"
+        android:elevation="5dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:hintEnabled="false"
+            app:passwordToggleEnabled="true"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_border_login"
+                android:hint="Password"
+                android:fontFamily="@font/manrope"
+                android:textColor="@color/black"
+                android:inputType="textPassword"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
 
     <Button
-        android:text="Login"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:id="@+id/btn_login"
+        android:layout_width="180dp"
+        android:layout_height="45dp"
+        android:fontFamily="@font/manrope_bold"
+        android:textSize="20sp"
+        android:text="@string/login"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:background="@drawable/background_btn"/>
 
 </LinearLayout>

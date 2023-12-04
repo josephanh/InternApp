@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/group_divider" >
+        <item
+            android:id="@+id/home_repost"
+            android:title="Báo cáo tuần"
+            android:icon="@drawable/report"
+            android:name="android:listDivider"/>
+        <item
+            android:id="@+id/notification"
+            android:title="Thông báo"
+            android:icon="@drawable/notification"
+            android:name="android:listDivider"/>
+        <item
+            android:id="@+id/chart"
+            android:icon="@drawable/chart"
+            android:title="Thống kê"/>
+
+    </group>
+    <group android:id="@+id/group_divider_2" >
+        <item
+            android:id="@+id/gioithieu"
+            android:icon="@drawable/about"
+            android:title="Giới thiệu"/>
+
+    </group>
+</menu>
